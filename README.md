@@ -1,5 +1,5 @@
 # backend-service-2-nkvqnwcyvy RESTful API Service
-test
+test1
 ##1. Environment
 - Maven 3.0 이상
 - JAVA 1.8
@@ -13,12 +13,12 @@ test
 ##3. Project Build
 - Clean: 
 
-    `{SRC_ROOT}$ mvn clean`
+    `{SRC_ROOT}$ mvn clean`2
 
-- Build Package
+-- Build Package
 
-    `{SRC_ROOT}$ mvn package`
+-    `{SRC_ROOT}$ mvn package`
     
-    `{SRC_ROOT}$ mvn package -Prelease`
+    `{SRC_ROOT}$ mvn package -Prelease`3
     
 

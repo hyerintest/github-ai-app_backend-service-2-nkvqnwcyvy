@@ -15,7 +15,7 @@ import org.springframework.web.servlet.config.annotation.*;
 
 import java.nio.charset.StandardCharsets;
 import java.time.Duration;
-
+//
 @Configuration
 @EnableAsync
 public class AsyncMVCConfig implements WebMvcConfigurer {
@@ -63,10 +63,10 @@ public class AsyncMVCConfig implements WebMvcConfigurer {
         registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
     }
 
-
+//
     @Bean
     public RestTemplate restTemplate(RestTemplateBuilder restTemplateBuilder) {
-        return restTemplateBuilder
+        return restTemplateBuilder //
         .requestFactory(() -> new BufferingClientHttpRequestFactory(new SimpleClientHttpRequestFactory()))
         .setConnectTimeout(Duration.ofMillis(50000)) // connection-timeout
         .setReadTimeout(Duration.ofMillis(150000)) // read-timeout
